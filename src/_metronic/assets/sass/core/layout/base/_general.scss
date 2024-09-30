@@ -1,0 +1,144 @@
+.projectcard{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--kt-app-header-base-bg-color);
+  border-radius: 10px;
+  padding: 2rem;
+  align-items: center;
+}
+.projectinfo{
+  font-size: 16px;
+  text-align: center;
+}
+.iconsflex{
+  display: flex;
+  gap: 20px;
+}
+.btn-giris{
+  background: #358597;
+  color: white;
+}
+.btn-cikis{
+  background-color: blue;
+  color: white;
+}
+.btn-hasta{
+  background: red;
+  color: white;
+}
+.btn-malzeme{
+  background: #f4b41a;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .projectcard{
+    display: block;
+
+  }
+  .iconsflex{
+    gap: 5px;
+  }
+  .projectinfo{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .mobileblock{
+    display: block !important;
+
+  }
+}
+.hastaeklediv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+.borderedlocation{
+  background: blue;
+  color: white !important;
+  border-radius: 4px;
+  padding: 4px;
+}
+.datepickermodal{
+  position: absolute;
+  top: 75px;
+}
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--bs-card-border-radius);
+}
+.mobilelogin{
+  @media (max-width: 767px) {
+      flex-wrap: wrap;
+      flex-direction: column !important;
+      align-items: center;
+  }
+}
+.imgstyle{
+  object-fit: cover !important;
+  width: 138px !important;
+}
+.datecss{
+  width: 100%;
+  color: #5E6278;
+  background-color: #ffffff;
+  border: 1px solid #E4E6EF;
+  box-shadow: none !important;
+  display: block;
+  padding: 0.775rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  background-clip: padding-box;
+  appearance: none;
+  border-radius: 0.475rem;
+}
+
+.gjs-one-bg {
+  background-color: #3e1e81;
+}
+
+.gjs-two-color {
+  color: #9ca8bb !important;
+}
+
+.gjs-three-bg {
+  background-color: #7239EA !important;
+  color: white !important;
+}
+
+.gjs-four-color,
+.gjs-four-color-h:hover {
+  color: #7239EA !important;
+}
+#svg-turkiye-haritasi-container{
+  max-width: 940px !important;
+}
+.trmap{
+
+}
+
+g[id="turkiye"] > g[data-have-project="false"] > path {
+  fill: gray !important;
+}
+
+g[id="turkiye"] > g[data-have-project="false"] > path:hover {
+  fill: darkgray !important;
+}
+
+g[id="turkiye"] > g[data-have-project="true"] > path {
+  fill: darkred !important;
+}
+
+g[id="turkiye"] > g[data-have-project="true"] > path:hover {
+  fill: orangered !important;
+}

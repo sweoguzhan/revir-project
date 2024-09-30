@@ -1,0 +1,29 @@
+//
+// Toggle
+//
+
+.toggle {
+    &.collapsible:not(.collapsed), // Integration with Bootstrap Collapse
+    &.active {
+        .toggle-off {
+            display: none;
+        }
+    }
+
+    &.collapsible.collapsed, // Integration with Bootstrap Collapse
+    &:not(.collapsible):not(.active) {
+        .toggle-on {
+            display: none;
+        }
+    }
+}
+.togglemenu:hover{
+    color: #009ef7;
+    background: #F4F6FA;
+    >i{
+        color: #009ef7;
+    }
+}
+.togglemenu{
+    border-radius: 10px;
+}
